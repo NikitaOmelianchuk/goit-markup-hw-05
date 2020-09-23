@@ -453,7 +453,8 @@ body {
   margin-right: 0;
 }
 
-.button-link:hover {
+.button-link:hover,
+.button-link:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
 }
@@ -508,7 +509,8 @@ body {
   color: var(--link-color);
 }
 
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
   outline-color: var(--accent-color);
   color: var(--accent-color);
 }
@@ -586,10 +588,10 @@ body {
   margin-bottom: 0px;
 }
 
-.networks-list .item {
+.networks-link {
   width: 44px;
   height: 44px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 
@@ -600,7 +602,8 @@ body {
   border-radius: 50%;
 }
 
-.networks-list .item:hover {
+.networks-link:hover,
+.networks-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -667,6 +670,7 @@ body {
 
 .services-link {
   display: block;
+  text-decoration: none;
 }
 
 .services-cover {
@@ -691,7 +695,7 @@ body {
   padding: 20px 24px;
 }
 
-.services-list h2 {
+.services-names > h2 {
   margin-top: 0px;
   margin-bottom: 0px;
 
@@ -729,7 +733,8 @@ body {
   background-color: var(--accent-color);
 }
 
-.services-link:hover .services-overlay {
+.services-link:hover .services-overlay,
+.services-link:focus .services-overlay {
   transform: translateY(0);
 }
 
